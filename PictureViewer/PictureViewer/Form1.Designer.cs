@@ -55,7 +55,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(532, 303);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(759, 359);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -65,16 +65,16 @@
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Location = new System.Drawing.Point(3, 3);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(526, 266);
+            this.pictureBox1.Size = new System.Drawing.Size(753, 317);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 275);
+            this.checkBox1.Location = new System.Drawing.Point(3, 326);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(73, 21);
+            this.checkBox1.Size = new System.Drawing.Size(75, 21);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -88,15 +88,15 @@
             this.flowLayoutPanel1.Controls.Add(this.button4);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(82, 275);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(116, 326);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(447, 25);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(640, 30);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // button1
             // 
             this.button1.AutoSize = true;
-            this.button1.Location = new System.Drawing.Point(333, 3);
+            this.button1.Location = new System.Drawing.Point(526, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 27);
             this.button1.TabIndex = 0;
@@ -106,7 +106,7 @@
             // button2
             // 
             this.button2.AutoSize = true;
-            this.button2.Location = new System.Drawing.Point(205, 3);
+            this.button2.Location = new System.Drawing.Point(398, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 27);
             this.button2.TabIndex = 1;
@@ -116,7 +116,7 @@
             // button3
             // 
             this.button3.AutoSize = true;
-            this.button3.Location = new System.Drawing.Point(14, 3);
+            this.button3.Location = new System.Drawing.Point(207, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(185, 27);
             this.button3.TabIndex = 2;
@@ -126,7 +126,7 @@
             // button4
             // 
             this.button4.AutoSize = true;
-            this.button4.Location = new System.Drawing.Point(369, 36);
+            this.button4.Location = new System.Drawing.Point(126, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 27);
             this.button4.TabIndex = 3;
@@ -137,7 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(532, 303);
+            this.ClientSize = new System.Drawing.Size(759, 359);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Name = "Form1";
             this.Text = "Form1";
