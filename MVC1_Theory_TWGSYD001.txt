@@ -1,0 +1,77 @@
+QUESTION 1
+There are three ways you can work with data models and databases in the Entity
+Framework. Name and briefly describe each way.
+
+Answer:
+- Code first
+  - All database activity can be done using the code - if you don't have a database
+   you are able to code classes and properties corresponding to tables and columns.
+   If you do have a database, the entity framework tools can generate the properties
+   and classes that correspond to the existing tables and columns.
+- Database first
+  - If you have an existing database, Entity Framework can automatically generate
+  a data model with classes and properties corresponding to the existing database
+  objects.
+- Model first
+  - If you don't have a database, you can create a model in Entity Framework and
+  have it create the database using Data Definition Language (DDL) statements.
+
+QUESTION 2
+For model entity classes the Entity Framework can automatically interpret a
+property as the primary key. What naming patterns can you use to do this?
+Which is preferable, and why?
+
+Answer:
+The convention to detect primary keys is:
+- 'Id'
+- [type name]Id
+
+The preferred convention is 'Id' as it follows traditional database naming.
+
+QUESTION 3
+The Entity Framework discovers the database connection using a class derived
+from DbContext. This derived class will call one of the constructors on the
+base DbContext class. Briefly differentiate between the three Code First
+approaches to do this.
+
+Answer:
+- Connection by convention
+  - If you have no configuration and run a parameterless constructor for
+  DbContext - it will run in Code First mode and will use the namespace
+  name of your context class.
+- Connection by convention and specified database name
+  - If you have no configuration, but have a string constructor on DbContext,
+  DbContext will run in Code First mode and will create a connection using the
+  String constructor as the database name.
+- Connection string in app.config/web.config file
+  - You can add a connection string in your web.config/app.config to tell
+  DbContext to use a database other than the defaults of Code First
+  (SQL Express or LocalDb).
+
+QUESTION 4
+The Entity Framework can automatically drop and re-create a database for
+How else can you handle model changes?
+
+Answer:
+- Dropping the database causes the loss of all data stored. Model changes can
+  be handled in production can be done using Code First Migration without
+  dropping the database.
+
+QUESTION 5
+Conventions are sets of rules that are used to automatically configure a
+conceptual model based on class definitions when working with Code First.
+Which other approaches can be used to further configure your model?
+
+Answer:
+  - Built-in conventions
+  - Custom conventions
+  - Model conventions
+
+QUESTION 6
+Microsoft continuously develops the MVC framework. What (exact) version of MVC
+is your web application using? Where in your project did you find this
+information?
+
+Answer:
+- 5.2.4.0
+- web.config file
