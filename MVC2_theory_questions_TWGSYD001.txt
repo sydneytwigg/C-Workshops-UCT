@@ -1,0 +1,23 @@
+Route data specifies controller, action, and id segments. Where in your app is the default route data stored?
+	- HomeController.cs
+
+Your app uses both HTTP POST and GET action methods. Briefly explain the difference between a POST and GET request.
+	- GET - a method to send information from the browser to the server - GET appends the values being submitted to the URL
+	- POST 	- a method to send information from the browser to the server - POST stores the values being submitted inside the HTTP request body, therefore is more secure
+
+The database context keeps track of whether entities in memory are in sync with their corresponding rows in the database, and this information determines what happens when you call the SaveChanges method. What are the members of the EntityState enumeration? To what SQL statement does each state relate?
+	- Members of EntityState enumeration:
+		- Added
+		- Deleted
+		- Detatched
+		- Modified
+		- Unchanged
+
+The scaffolded code provides a Dispose method at the end of the (student) controller. What is the purpose of the Dispose method at the end of the controller class?
+	- The dispose method ensures that the database is always properly displosed in order to prevent memory leaks.
+
+
+The app seems to allow either ActionResult or ViewResult to be used. What is the difference between using ActionResult and ViewResult?
+	- ActionResult - returns information about an action that was performed, doesn't need to have a view attached
+	- ViewResult - renders a specified view to the response stream
+		     - returns a view from the database
