@@ -1,0 +1,39 @@
+1.	Which namespace do you need to include when writing asynchronous code?
+
+		using System.Threading.Tasks
+
+2.	In which types of situations are asynchronous applications most useful?
+
+		When many tasks are executed simulataneously.
+
+3.	The new model for asynchronous methods is called TAP – what does this abbreviation stand for?
+
+		Task-based Asynchronous Pattern
+
+4.	When using stored procedures with EF, what conventions will be used for the naming and parameters of the stored procedures?
+
+		'ControllerName'_'Operation'
+
+5.	Which method of dealing with concurrency scenarios is not supported by EF?
+
+		Pessimistic currency control, AKA locking
+
+6.	Optimistic concurrency means allowing concurrency conflicts to happen, and then reacting appropriately if they do. Describe the default action if you don’t do any coding to handle this.
+
+		The prodecure will commit to the database if there are no conflicts on that particular record. 		
+
+7.	Which type of exception is thrown by EF when the database is concurrently updated?
+
+		OptimisticConcurrencyException
+
+8.	Briefly distinguish between the three inheritance patterns in EF.
+
+		Table-per-hierarachy
+			Generating an entity instance structure from a single database table
+		Table-per-type
+			Making a database table for each entity class
+		Table-per-concrete
+			Map all non-abstract types to individual tables
+		
+		
+
