@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Jan_2019_Past_Paper.ViewModels.OffenseTotalsGroup>
+@{
+    ViewBag.Title = "Fine Statistics";
+}
+<h2>@ViewBag.Title.</h2>
+
+<table>
+    <tr><th>Offense Type</th><th>Fine Amount</th></tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <th>@Html.DisplayFor(modelItem => item.Offense)</th>
+            <th>@item.sumFines</th>
+        </tr>
+    }
+</table>

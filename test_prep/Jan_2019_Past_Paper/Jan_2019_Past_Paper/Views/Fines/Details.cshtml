@@ -1,0 +1,82 @@
+﻿@model Jan_2019_Past_Paper.Models.Fine
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Fine</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.LicensePlate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LicensePlate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.VehicleType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.VehicleType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Offense)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Offense)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OffenseDetail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OffenseDetail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OffenseDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OffenseDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OffenseTime)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OffenseTime)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Outstanding)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Outstanding)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

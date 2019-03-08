@@ -1,0 +1,55 @@
+﻿@model IEnumerable<Jan_2019_Past_Paper.Models.Fine>
+
+@{
+    ViewBag.Title = "Fines";
+}
+
+<h2>Fines</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+           @Html.ActionLink("License Plate", "Index", new { sortOrder = ViewBag.LicenseSortParm})
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VehicleType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Offense)
+        </th>
+        
+        <th>
+            @Html.ActionLink("Offense Date", "Index", new { sortOrder = ViewBag.DateSortParm })
+        </th>
+        
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.LicensePlate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VehicleType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Offense)
+        </td>
+        
+        <td>
+            @Html.DisplayFor(modelItem => item.OffenseDate)
+        </td>
+        
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
